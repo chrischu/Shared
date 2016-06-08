@@ -59,9 +59,9 @@ function Get-CommitCountSinceTag {
   Param([string] $tag)
 
   if ($tag) {
-    return (git rev-list "${tag}..HEAD" --count) + 1
+    return [int](git rev-list "${tag}..HEAD" --count) + 1
   } else {
-    return (git rev-list HEAD --count) + 1
+    return [int](git rev-list HEAD --count) + 1
   }
 }
 
