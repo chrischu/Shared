@@ -25,13 +25,12 @@ BuildStep Create-NuGetPackagesFromSolution -LogMessage 'Create-NuGetPackagesFrom
     foreach ($project in $nuGetPackProjects) {
       # IDEA: Add parameter for excludes
       Exec { 
-        & $NuGetExecutable pack $($project.ProjectPath) `
+        & $NuGetExecutable pack "$($project.ProjectPath)" `
           -Version $version `
           -Properties "Configuration=$configuration;OutputDir=$($project.OutDir)" `
           -IncludeReferencedProjects `
-          -OutputDirectory $resultsDirectory `
-          -Exclude Content\chosen-sprite@2x.png # PLANNED RN-698: This is a workaround for https://github.com/NuGet/Home/issues/2389 (necessary e.g. in the RegisterNova.UI project)
-      } -ErrorMessage "Could not create NuGet package for '$project.ProjectName'"
+          -OutputDirectory $resultsDirectory
+      } -ErrorMessage "Could not create NuGet package for '$($project.ProjectName)'"
     }
   } finally {
     _Remove-DummyNuSpecAndDirectoriesForNuGet $nuGetPackProjects
