@@ -145,7 +145,7 @@ function _Create-DummyNuSpecFiles {
   [CmdletBinding()]
   Param([Parameter(Mandatory)] [Project[]] $nuGetPackProjects)
 
-  # See https://wiki.rubicon.eu/display/RN/Packaging#Packaging-Nupkgcreationinre-motion for why we need a dummy NuSpec file
+  # We need a dummy NuSpec file to make sure the referenced projects are recorded correctly.
 
   foreach ($project in $nuGetPackProjects) {
     $dummyNuSpecFile = [System.IO.Path]::ChangeExtension($project.ProjectPath, "nuspec")
