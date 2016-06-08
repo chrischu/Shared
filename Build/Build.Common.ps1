@@ -126,24 +126,6 @@ function Get-ProjectsFromSolution {
   return $projects
 }
 
-function Get-BinDirectory {
-  [CmdletBinding()]
-  Param(
-      [Parameter(Mandatory)] [string] $projectDirectory, 
-      [Parameter(Mandatory)] [string] $configuration)
-
-  return "$projectDirectory\bin\$configuration"
-}
-
-function Get-PackageDirectory {
-  [CmdletBinding()]
-  Param(
-      [Parameter(Mandatory)] [string] $projectDirectory, 
-      [Parameter(Mandatory)] [string] $configuration)
-
-  return "$projectDirectory\obj\$configuration\Package\PackageTmp"
-}
-
 BuildStep Update-AssemblyInfo -LogMessage 'Update-AssemblyInfo ''$file''' {
   Param(
     [Parameter(Mandatory)] [string] $file, 
@@ -180,51 +162,6 @@ BuildStep Restore-AssemblyInfo -LogMessage 'Restore-AssemblyInfo ''$file''' {
   Param([Parameter(Mandatory)] [string] $file)
 
   Restore-File $file
-}
-
-BuildStep Create-ScreenshotReport {
-  Param(
-      [Parameter(Mandatory)] [string] $reporterExecutable, 
-      [Parameter(Mandatory)] [string] $screenshotDirectory)
-
-  Exec { & $reporterExecutable $screenshotDirectory } -ErrorMessage "Failed to create screenshot reports"
-}
-
-BuildStep Prepare-TestConfigFile -LogMessage 'Prepare-TestConfigFile (DataSource=''$dataSource'')' {
-  Param(
-      [Parameter(Mandatory)] [string] $appConfigFilePath, 
-      [Parameter(Mandatory)] [string] $dataSource)
-
-  Update-File $appConfigFilePath {
-    $_ -Replace "connectionString\s*=\s*`"Data Source\s*=\s*localhost\s*;", "connectionString=`"Data Source=$dataSource;"
-  }
-}
-
-BuildStep Prepare-WebTestConfigFile -LogMessage 'Prepare-WebTestConfigFile (Browser=''$browser'', ScreenshotAndLogDirectory=''$screenshotAndLogsDirectory'')' {
-  Param(
-      [Parameter(Mandatory)] [string] $webAppConfigPath, 
-      [Parameter(Mandatory)] [string] $browser, 
-      [Parameter(Mandatory)] [string] $screenshotAndLogsDirectory,
-      [Parameter(Mandatory)] [string] $webTestLogName) 
-
-  [xml] $xml = Get-Content $webAppConfigPath
-  Xml-UpdateAttribute $xml "/configuration/appSettings/add[@key='Browser']" "value" $browser
-  Xml-UpdateAttribute $xml "/configuration/appSettings/add[@key='ScreenshotDirectory']" "value" $screenshotAndLogsDirectory
-  Xml-UpdateAttribute $xml "/configuration/log4net/appender[@name='FileAppender']/file/conversionPattern" "value" "$screenshotAndLogsDirectory\$webTestLogName.%date{yyyyMMdd}.log"
-
-  $xml.Save($webAppConfigPath)
-}
-
-function Xml-UpdateAttribute {
-  [CmdletBinding()]
-  Param(
-      [Parameter(Mandatory)] [xml] $xml, 
-      [Parameter(Mandatory)] [string] $xpath, 
-      [Parameter(Mandatory)] [string] $attributeName, 
-      [Parameter(Mandatory)] [string] $newAttributeValue)
-
-  $elem = $xml.SelectSingleNode($xpath)
-  $elem.SetAttribute($attributeName, $newAttributeValue)
 }
 
 Add-Type -As System.IO.Compression.FileSystem
