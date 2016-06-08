@@ -86,3 +86,4 @@ switch($Mode) {
 . $PSScriptRoot\Build.NuGet.ps1
 . $PSScriptRoot\Build.Testing.ps1
 . $PSScriptRoot\Build.ReSharperInspectCode.ps1
+. $PSScriptRoot\Build.Versioning.ps1
