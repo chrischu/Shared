@@ -62,6 +62,9 @@ class Project {
   [string] $TargetPath
   [string] $TargetDir
 
+  [string] $NuSpecName
+  [string] $NuSpecPath
+
   Project([string] $name, [string] $path, [string] $configuration) {
     $this.ProjectName = $name
     $this.ProjectPath = $path
@@ -92,16 +95,21 @@ class Project {
     $this.TargetName = "$assemblyName.$extension"
     $this.TargetDir = Join-Path $this.ProjectDir $this.OutDir
     $this.TargetPath = Join-Path $this.TargetDir $this.TargetName
-  }
 
-  [bool] ContainsXmlNode([string] $nodeSelector) {
-    [xml] $xml = Get-Content $this.ProjectPath
-    [System.Xml.XmlNamespaceManager] $nsmgr = $xml.NameTable
-    $nsmgr.AddNamespace("msb", "http://schemas.microsoft.com/developer/msbuild/2003")
+    # Unfortunately XPath 1.0 does not support ends-with so therefore we have to build our own version of it.
+    $endsWith = "{1} = substring({0}, string-length({0}) - string-length({1}) + 1)"
 
-    $nodes = $xml.SelectNodes($nodeSelector, $nsmgr)
+    $nuSpecNodes = $xml.SelectNodes("//msb:None[$($endsWith -f "@Include", "'.nuspec'")]", $nsmgr)
 
-    return $nodes.Count -gt 0
+    if($nuSpecNodes.Count -eq 0){
+      $this.NuSpecName = $null
+      $this.NuSpecPath = $null
+    } elseif ($nuSpecNodes.Count -eq 1) {
+      $this.NuSpecPath = Join-Path $this.ProjectDir $nuSpecNodes.Include
+      $this.NuSpecName = [System.IO.Path]::GetFileName($this.NuSpecPath)
+    } else {
+      throw "ERROR: Project '$($this.ProjectName)' should not contain more than one .nuspec file."
+    }
   }
 }
 
