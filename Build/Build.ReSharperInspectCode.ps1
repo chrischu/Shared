@@ -26,11 +26,7 @@ BuildStep Execute-ReSharperCodeInspection {
   Write-Host "ReSharper InspectCode found $numberOfIssues issues."
 
   if ($numberOfIssues -gt 0) {
-    if ($IsRunningLocally) {
-      throw "BUILD FAILED: There are $numberOfIssues ReSharper code inspection issues."
-    } else {
-      TeamCity-BuildProblem "There are $numberOfIssues ReSharper code inspection issues."
-    }
+    throw "BUILD FAILED: There are $numberOfIssues ReSharper code inspection issues."
   }
 
   return $numberOfIssues
