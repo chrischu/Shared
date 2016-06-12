@@ -62,17 +62,108 @@ function _Execute-TestsWithDotCover {
     [Parameter(Mandatory)] [AllowEmptyString()] [string[]] $testRunnerArguments, 
     [Parameter(Mandatory)] [string[]] $testAssemblies,
     [Parameter(Mandatory)] [string] $dotSettingsFile, 
-    [Parameter(Mandatory)] [string] $resultsFile)
+    [Parameter(Mandatory)] [string] $dotCoverResultsFile)
+
+  try {
+    $dotCoverConfig = _Create-DotCoverConfigurationFile $dotSettingsFile
+
+    _Invoke-DotCover @(
+      "cover", 
+      $dotCoverConfig, 
+      "/TargetExecutable=$testRunnerExecutable", 
+      "/TargetArguments=""$testRunnerArguments $testAssemblies""", 
+      "/Output=$dotCoverResultsFile"
+    ) -ErrorMessage "$testType tests with dotCover Coverage analysis have failed"
+
+    Report-DotCoverCoverageAnalysisResults $dotCoverResultsFile
+  } finally {
+    Remove-Item $dotCoverConfig
+  }
+}
+
+function _Invoke-DotCover {
+  [CmdletBinding()]
+  Param(
+    [Parameter(Mandatory)] [string[]] $arguments, 
+    [Parameter(Mandatory)] [string] $errorMessage)
 
   $dotCoverPath = Get-NuGetSolutionPackagePath "JetBrains.dotCover.CommandLineTools"
   $dotCoverExecutable = "$dotCoverPath\tools\dotCover.exe"
-  $dotCoverConfig = _Create-DotCoverConfigurationFile $dotSettingsFile
 
-  Exec { & $dotCoverExecutable cover /TargetExecutable:$testRunnerExecutable $dotCoverConfig /TargetArguments:"$testRunnerArguments $testAssemblies" /Output=$resultsFile } -ErrorMessage "$testType tests with dotCover Coverage analysis have failed"
+  Exec { 
+    & $dotCoverExecutable $arguments
+  } -ErrorMessage $errorMessage
+}
 
-  Remove-Item $dotCoverConfig
+BuildStep Create-DotCoverCoverageBadge -LogMessage "Create-DotCoverCoverageBadge (for '`$(Split-Path -Leaf `$dotCoverResultsFile)')" {
+  Param(
+    [Parameter(Mandatory)] [string] $dotCoverResultsFile,
+    [Parameter(Mandatory)] [string] $dotCoverCoverageBadgeFile)
 
-  Report-DotCoverCoverageAnalysisResults $resultsFile
+  $coveragePercentage = _Get-DotCoverCoveragePercentage $dotCoverResultsFile
+  $badgeColor = _Get-DotCoverCoverageBadgeColor $coveragePercentage
+
+  Invoke-WebRequest -Uri "https://img.shields.io/badge/coverage-${coveragePercentage}%-${badgeColor}.svg?style=flat" -OutFile $dotCoverCoverageBadgeFile
+}
+
+BuildStep Create-DotCoverCoverageReport -LogMessage "Create-DotCoverCoverageReport (for '`$(Split-Path -Leaf `$dotCoverResultsFile)')" {
+  Param(
+    [Parameter(Mandatory)] [string] $dotCoverResultsFile,
+    [Parameter(Mandatory)] [string] $dotCoverCoverageReportFile)
+
+  _Create-DotCoverReport $dotCoverResultsFile $dotCoverCoverageReportFile "HTML"
+}
+
+function _Get-DotCoverCoverageBadgeColor {
+  [CmdletBinding()]
+  Param(
+    [Parameter(Mandatory)] [int] $coveragePercentage)
+
+  if ($coveragePercentage -eq 100) {
+    return "brightgreen"
+  } elseif ($coveragePercentage -ge 90) {
+    return "green"
+  } elseif ($coveragePercentage -ge 80) {
+    return "yellowgreen"
+  } elseif ($coveragePercentage -ge 65) {
+    return "yellow"
+  } elseif ($coveragePercentage -ge 50) {
+    return "orange"
+  } else {
+    return "red"
+  }
+}
+
+function _Get-DotCoverCoveragePercentage {
+  [CmdletBinding()]
+  Param(
+    [Parameter(Mandatory)] [string] $dotCoverResultsFile)
+
+  try {
+    $xmlReportFile = [System.IO.Path]::GetTempFileName()
+    _Create-DotCoverReport $dotCoverResultsFile $xmlReportFile "XML"
+
+    [xml] $xmlReport = Get-Content $xmlReportFile
+
+    return $xmlReport.Root.CoveragePercent
+  } finally {
+    Remove-Item $xmlReportFile
+  }
+}
+
+function _Create-DotCoverReport {
+  [CmdletBinding()]
+  Param(
+    [Parameter(Mandatory)] [string] $dotCoverResultsFile,
+    [Parameter(Mandatory)] [string] $outputFile,
+    [Parameter(Mandatory)] [ValidateSet("HTML", "XML")] [string] $reportFormat)
+
+  _Invoke-DotCover @(
+      "report", 
+      "/Source=$dotCoverResultsFile", 
+      "/Output=$outputFile", 
+      "/ReportType=$reportFormat"
+    ) -ErrorMessage "Creating a $reportFormat report for '$dotCoverResultsFile' failed"
 }
 
 function _Create-DotCoverConfigurationFile {
