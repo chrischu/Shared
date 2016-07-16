@@ -32,10 +32,12 @@ function Report-NuGetPackage {
 
 function Report-Archive {
   [CmdletBinding()]
-  Param([Parameter(Mandatory)] [string] $archivePath)
+  Param(
+    [Parameter(Mandatory)] [string] $archivePath, 
+    [Parameter(Mandatory)] [string] $deploymentName)
 
   Write-Host "Reporting archive '$archivePath' as AppVeyor artifact..."
-  Push-AppVeyorArtifact $archivePath -DeploymentName SolutionInspector.zip
+  Push-AppVeyorArtifact $archivePath -DeploymentName $deploymentName
 }
 
 function Report-TestError {

@@ -20,7 +20,9 @@ function Report-NuGetPackage {
 
 function Report-Archive {
   [CmdletBinding()]
-  Param([Parameter(Mandatory)] [string] $archivePath)
+  Param(
+    [Parameter(Mandatory)] [string] $archivePath, 
+    [Parameter(Mandatory)] [string] $deploymentName)
 }
 
 function Report-TestError {
