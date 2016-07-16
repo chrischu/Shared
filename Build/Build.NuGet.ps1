@@ -16,10 +16,14 @@ BuildStep Create-NuGetPackagesFromSolution -LogMessage 'Create-NuGetPackagesFrom
   $nuGetPackProjects = $projects | ?{ -not [string]::IsNullOrEmpty($_.NuSpecName) }
 
   $nuGetPackLibraryProjects = $nuGetPackProjects | ?{ -not $_.NuSpecName.EndsWith('.tool.nuspec') }
-  _Create-LibraryNuGetPackagesFromSolution $solutionDirectory $nuGetPackLibraryProjects $version $configuration $vcsUrlTemplate $resultsDirectory
+  if ($nuGetPackLibraryProjects) {
+    _Create-LibraryNuGetPackagesFromSolution $solutionDirectory $nuGetPackLibraryProjects $version $configuration $vcsUrlTemplate $resultsDirectory
+  }
 
   $nuGetPackToolProjects = $nuGetPackProjects | ?{ $_.NuSpecName.EndsWith('.tool.nuspec') }
-  _Create-ToolNuGetPackagesFromSolution $solutionDirectory $nuGetPackToolProjects $version $configuration $resultsDirectory
+  if ($nuGetPackToolProjects) {
+    _Create-ToolNuGetPackagesFromSolution $solutionDirectory $nuGetPackToolProjects $version $configuration $resultsDirectory
+  }
 }
 
 function _Create-LibraryNuGetPackagesFromSolution {
