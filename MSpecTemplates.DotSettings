@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wpf:ResourceDictionary xml:space="preserve" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml">
+	<!-- /Default/PatternsAndTemplates/* -->
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=495BF1203525B7409B10D1C316F0FF0F/EntryName/@EntryValue">TestFixture</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=495BF1203525B7409B10D1C316F0FF0F/Position/@EntryValue">4</s:Int64>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=7AB45EC5107C75499390839BA7C9F5E5/EntryName/@EntryValue">Test</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/QuickList/=F0CA621CDF5AB24282D8CDC11C520997/Entry/=7AB45EC5107C75499390839BA7C9F5E5/Position/@EntryValue">5</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Categories/=Argument_0020Check_0020Templates/@EntryIndexedValue">Argument Check Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Description/@EntryValue">Inserts an argument not null or empty check</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Field/=parameterName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Field/=parameterName/Expression/@EntryValue">parameterOfType("System.Collections.ICollection")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Field/=parameterName/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Field/=parameterName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/Type/@EntryValue">InCSharpExpression</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Shortcut/@EntryValue">_checkNotNullOrEmptyForICollection</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=020817CBF976404EA76CFBCD1DFCDDF8/Text/@EntryValue">ArgumentUtility.CheckNotNullOrEmpty ("$parameterName$", $parameterName$);$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Description/@EntryValue">MSpec.Establish</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Shortcut/@EntryValue">_est</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=0ACCF8ED765ECA4781826E78D08BDD81/Text/@EntryValue">Establish ctx = () =&gt;
+{
+  $END$
+};</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Description/@EntryValue">MSpec.BecauseResult</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Field/=action/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Field/=action/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Field/=T/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Field/=T/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Shortcut/@EntryValue">_rbec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=216AAF84174A024B99157A2D42D082CC/Text/@EntryValue">Machine.Specifications.Because of = () =&gt; Result = SUT.$action$;
+
+static $T$ Result;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Field/=view/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Field/=view/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Shortcut/@EntryValue">_it_view_partial</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=281072E00DF93A4EBC9F0DA74317995C/Text/@EntryValue">It returns_partial_view_$view$ = () =&gt;&#xD;
+    Result.ShouldBeAPartialView().And().ViewName.ShouldEqual("_$view$");</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Field/=model/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Field/=model/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Field/=model/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Shortcut/@EntryValue">_it_model</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=29D584FFCE29934C942C4F5484998B66/Text/@EntryValue">It provides_$model$ = () =&gt;&#xD;
+    Result.Model&lt;$model$&gt;().$END$;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=action/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=action/Expression/@EntryValue">complete()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=action/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=action/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=desc/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=desc/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=method/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=method/Expression/@EntryValue">list("posting,getting")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Field/=method/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Shortcut/@EntryValue">_when_ctrl</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=2CD2B5E4A62C6240AA173AE6499DDAA2/Text/@EntryValue">class when_$method$_$action$_$desc$
+{
+  Because of = () =&gt; Result = SUT.$action$();
+
+  protected static ActionResult Result;
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/CustomProperties/=FileName/@EntryIndexedValue">Spec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Description/@EntryValue">Specification</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=init/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=init/Order/@EntryValue">3</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=namespace/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=namespace/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=namespace/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=namespace/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=spec/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=spec/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=spec/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=spec/Order/@EntryValue">2</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=subject/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Field/=subject/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=38048A57A7BD3F47ADA30D957A6FBE26/Text/@EntryValue">using System;
+using Machine.Specifications;
+
+#region R# preamble for Machine.Specifications files
+
+// ReSharper disable ArrangeTypeMemberModifiers
+// ReSharper disable ClassNeverInstantiated.Global
+// ReSharper disable ClassNeverInstantiated.Local
+// ReSharper disable InconsistentNaming
+// ReSharper disable MemberCanBePrivate.Local
+// ReSharper disable NotAccessedField.Local
+// ReSharper disable StaticMemberInGenericType
+// ReSharper disable UnassignedField.Global
+// ReSharper disable UnusedMember.Global
+// ReSharper disable UnusedMember.Local
+
+#endregion
+
+namespace $namespace$
+{
+  [Subject (typeof($subject$))]
+  public class $spec$
+  {
+    $init$
+  }
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Description/@EntryValue">MSpec.BecauseResult</s:String>
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Field/=Action/@KeyIndexDefined">True</s:Boolean>
+	
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Field/=Action/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Field/=ResultType/@KeyIndexDefined">True</s:Boolean>
+	
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Field/=ResultType/Order/@EntryValue">1</s:Int64>
+	
+	
+	
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Shortcut/@EntryValue">_bec_result</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=3FDFAF1B3E38D44B95E0F64562764E96/Text/@EntryValue">Machine.Specifications.Because of = () =&gt; Result = SUT.$Action$;
+
+static $ResultType$ Result;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Field/=Type/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Field/=Type/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Shortcut/@EntryValue">_docOnlyImpl</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=439548BE86A77C4FAF08C0E3003D5E7A/Text/@EntryValue">Default implementation of &lt;see cref="$Type$"/&gt;.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Description/@EntryValue">Generates keyword "null" documentation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Shortcut/@EntryValue">_docNull</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=466993CA5CB5F242BB4E6227E76DEAA0/Text/@EntryValue">&lt;see langword="null"/&gt;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Field/=parameterName/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Field/=parameterName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Scope/=C3001E7C0DA78E4487072B7E050D86C5/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Scope/=C3001E7C0DA78E4487072B7E050D86C5/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Scope/=C3001E7C0DA78E4487072B7E050D86C5/Type/@EntryValue">InCSharpFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Shortcut/@EntryValue">_checkNotEmpty</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=62C3B5F2D69BAE4C81EDECE34B70FFD0/Text/@EntryValue">ArgumentUtility.CheckNotEmpty ("$parameterName$", $parameterName$);$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Applicability/=File/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/CustomProperties/=Extension/@EntryIndexedValue">cs</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/CustomProperties/=FileName/@EntryIndexedValue">Test</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/CustomProperties/=ValidateFileName/@EntryIndexedValue">True</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Description/@EntryValue">Test fixture</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=CLASS/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=CLASS/Expression/@EntryValue">getFileNameWithoutExtension()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=CLASS/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=CLASS/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=NAMESPACE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=NAMESPACE/Expression/@EntryValue">fileDefaultNamespace()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=NAMESPACE/InitialRange/@EntryValue">-1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Field/=NAMESPACE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Scope/=E8F0594528C33E45BBFEC6CFE851095D/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Scope/=E8F0594528C33E45BBFEC6CFE851095D/Type/@EntryValue">InCSharpProjectFile</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Shortcut/@EntryValue">Test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=7AB45EC5107C75499390839BA7C9F5E5/Text/@EntryValue">using System;
+using NUnit.Framework;
+
+namespace $NAMESPACE$
+{
+  [TestFixture]
+  public class $CLASS$ {$END$}
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Field/=specification/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Field/=specification/Expression/@EntryValue">MSpecExtensionsPlugin.ValidIdentifierMacro()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Field/=specification/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Shortcut/@EntryValue">_it</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=803ACFBB9037384E95BBEAEDD6FBFB0B/Text/@EntryValue">It $specification$ = () =&gt;&#xD;
+    $END$;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Categories/=Argument_0020Check_0020Templates/@EntryIndexedValue">Argument Check Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Description/@EntryValue">Inserts an argument not null check</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Field/=parameterName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Field/=parameterName/Expression/@EntryValue">parameterOfType("System.Object")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Field/=parameterName/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Field/=parameterName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/Type/@EntryValue">InCSharpExpression</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Shortcut/@EntryValue">_checknotnull</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=82D6FA513ECC04408BC2B7AD2E85D216/Text/@EntryValue">ArgumentUtility.CheckNotNull ("$parameterName$", $parameterName$);$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Categories/=Unit_0020Test_0020Templates/@EntryIndexedValue">Unit Test Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Description/@EntryValue">Creates the test setup method.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Shortcut/@EntryValue">_setup</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=8D837E33B20C18498741E2C26490F145/Text/@EntryValue">[SetUp]
+public void SetUp ()
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Categories/=Syntax_0020Helper/@EntryIndexedValue">Syntax Helper</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Description/@EntryValue">Generic Type Parameter</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Shortcut/@EntryValue">T</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=9A213CAA25E9B34585539AA7118F617E/Text/@EntryValue">T</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Description/@EntryValue">Generates keyword "true" documentation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Shortcut/@EntryValue">_docTrue</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=AF328CB8FC27D74188D0F63DE2615192/Text/@EntryValue">&lt;see langword="true"/&gt;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Categories/=Argument_0020Check_0020Templates/@EntryIndexedValue">Argument Check Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Description/@EntryValue">Inserts an argument not null or empty check</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Field/=parameterName/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Field/=parameterName/Expression/@EntryValue">parameterOfType("System.String")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Field/=parameterName/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Field/=parameterName/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Scope/=E6E678D4B937A84D8C4585DDD2F27DB0/Type/@EntryValue">InCSharpExpression</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Shortcut/@EntryValue">_checkNotNullOrEmptyForString</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=B3715BF2875B914592FCC8E868539819/Text/@EntryValue">ArgumentUtility.CheckNotNullOrEmpty ("$parameterName$", $parameterName$);$END$</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Field/=view/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Field/=view/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Shortcut/@EntryValue">_it_view</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=BD76E332489DE144BFAA90AB295C13A8/Text/@EntryValue">It returns_view_$view$ = () =&gt;&#xD;
+    Result.ShouldBeAView().And().ViewName.ShouldEqual("$view$");</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Description/@EntryValue">Generates documentation for required String or ICollection parameters.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Shortcut/@EntryValue">_docParameterNotNullOrEmpty</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=C1114101369BC341BEC2BEB2B010E023/Text/@EntryValue">Must not be &lt;see langword="null"/&gt; or empty.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Categories/=Unit_0020Test_0020Templates/@EntryIndexedValue">Unit Test Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Description/@EntryValue">Creates the test tear-down method.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Shortcut/@EntryValue">_teardown</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=CA22055BB1D7C14FB94A85D2D3B9199D/Text/@EntryValue">[TearDown]
+public void TearDown ()
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Description/@EntryValue">MSpec.Spec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Field/=context/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Field/=context/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Shortcut/@EntryValue">_con</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=D3E01F876C512A4F989D7A6A0D266D10/Text/@EntryValue">class $context$_context
+{
+  Establish ctx = () =&gt;
+  {
+    $END$
+  };
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Field/=action/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Field/=action/Expression/@EntryValue">MSpecExtensionsPlugin.ValidIdentifierMacro()</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Field/=action/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Shortcut/@EntryValue">_when</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=DA3D7B27FAFF7B40AE932C60BFED8922/Text/@EntryValue">class when_$action$
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Description/@EntryValue">MSpec.It fails</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=ACTION/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=ACTION/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=EXCEPTIONTYPE/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=EXCEPTIONTYPE/Expression/@EntryValue">list("NotSupportedException,InvalidOperationException")</s:String>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=EXCEPTIONTYPE/InitialRange/@EntryValue">1</s:Int64>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Field/=EXCEPTIONTYPE/Order/@EntryValue">1</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Shortcut/@EntryValue">_fail</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E09D3EBDB0C41443B1C761E444199A8A/Text/@EntryValue">Machine.Specifications.Because of = () =&gt; Exception = Catch.Exception(() =&gt; SUT.$ACTION$);
+
+Machine.Specifications.It throws = () =&gt;
+    Exception.Should().Be&lt;$EXCEPTIONTYPE$&gt;("$END$");
+    
+static Exception Exception;
+</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Description/@EntryValue">Generates documentation for required parameters.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Shortcut/@EntryValue">_docParameterNotNull</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E3C46F448E13AF43B34B1B3903B2DA68/Text/@EntryValue">Must not be &lt;see langword="null"/&gt;.</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Categories/=Doc_0020Templates/@EntryIndexedValue">Doc Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Description/@EntryValue">Generates keyword "false" documentation</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Scope/=139FF4CE89E7094686FDA7BF5FFBBE92/Type/@EntryValue">Everywhere</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Shortcut/@EntryValue">_docFalse</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=E4194676506B1B458E11AEA6EDF9E37C/Text/@EntryValue">&lt;see langword="false"/&gt;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Description/@EntryValue">MSpec.Cleanup</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Shortcut/@EntryValue">_cleanup</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=ED467D21C4A5174F87E1D83F7D8963FF/Text/@EntryValue">Cleanup stuff = () =&gt;
+{
+  $END$
+};</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Categories/=MSpec/@EntryIndexedValue">MSpec</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Description/@EntryValue">MSpec.Because</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Scope/=CF7C2F2066E462418ABD91975B64021C/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Scope/=CF7C2F2066E462418ABD91975B64021C/CustomProperties/=mask/@EntryIndexedValue">*Spec.*</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Scope/=CF7C2F2066E462418ABD91975B64021C/Type/@EntryValue">InFileWithMask</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Shortcut/@EntryValue">_bec</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=F77EB4E2508D3D4AA673CF29F04F82CD/Text/@EntryValue">Machine.Specifications.Because of = () =&gt; $END$;</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/@KeyIndexDefined">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Applicability/=Live/@EntryIndexedValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Categories/=Unit_0020Test_0020Templates/@EntryIndexedValue">Unit Test Templates</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Description/@EntryValue">Creates the body of a unit test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Field/=name/@KeyIndexDefined">True</s:Boolean>
+	<s:Int64 x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Field/=name/Order/@EntryValue">0</s:Int64>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Reformat/@EntryValue">True</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/CustomProperties/=minimumLanguageVersion/@EntryIndexedValue">2.0</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Scope/=B68999B9D6B43E47A02B22C12A54C3CC/Type/@EntryValue">InCSharpTypeMember</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Shortcut/@EntryValue">_test</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/ShortenQualifiedReferences/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/LiveTemplates/Template/=FEF15CCA99D1BE45A90249792C57127D/Text/@EntryValue">[Test]
+public void $name$ ()
+{
+  $END$
+}</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/Color/@EntryValue">0, 192, 0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/Name/@EntryValue">Planned</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/Pattern/@EntryValue">(?&lt;=\W|^)(?&lt;TAG&gt;PLANNED)(\W|$)(.*)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=0F53980FABEB984FB7CBF6BD653A128B/TodoIconStyle/@EntryValue">Normal</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=4386F01B791C56499C7EA059B55FFB54/@KeyIndexDefined">False</s:Boolean>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/Color/@EntryValue">192, 255, 192</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/Name/@EntryValue">Technical debt</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/Pattern/@EntryValue">(?&lt;=\W|^)(?&lt;TAG&gt;DEBT)(\W|$)(.*)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=486AEFDD191B5547ABC89554ACF87416/TodoIconStyle/@EntryValue">Normal</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/Color/@EntryValue">255, 128, 0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/Name/@EntryValue">Review</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/Pattern/@EntryValue">(?&lt;=\W|^)(?&lt;TAG&gt;REVIEW)(\W|$)(.*)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=704B67AD7FDBCB45805231685603396B/TodoIconStyle/@EntryValue">Edit</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/Color/@EntryValue">192, 64, 0</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/Name/@EntryValue">Security Review</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/Pattern/@EntryValue">(?&lt;=\W|^)(?&lt;TAG&gt;SECURITYREVIEW)(\W|$)(.*)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=831C02ACD694A542927B69828143DB92/TodoIconStyle/@EntryValue">Edit</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=961894CCC510410ABE2B99132B253C80/TodoIconStyle/@EntryValue">Warning</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/@KeyIndexDefined">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/Color/@EntryValue">192, 255, 192</s:String>
+	<s:Boolean x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/MatchComments/@EntryValue">True</s:Boolean>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/Name/@EntryValue">Idea</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/Pattern/@EntryValue">(?&lt;=\W|^)(?&lt;TAG&gt;IDEA)(\W|$)(.*)</s:String>
+	<s:String x:Key="/Default/PatternsAndTemplates/Todo/TodoPatterns/=FC21A15B83F39E40B9380A80D5259A31/TodoIconStyle/@EntryValue">Normal</s:String>
+</wpf:ResourceDictionary>
