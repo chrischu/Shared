@@ -15,6 +15,8 @@ BuildStep Publish-CoverageReport {
   git checkout -q $env:APPVEYOR_REPO_BRANCH
 
   Remove-Item -Confirm:$false -Recurse "Shared"
+  git reset --hard
+  git clean -f
   git checkout -q gh-pages
 
   Write-Host "Copying coverage badge"
