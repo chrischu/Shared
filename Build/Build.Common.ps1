@@ -197,3 +197,15 @@ function Ensure-StringEndsWith {
 
   return $string + $char
 }
+
+function Format-Xml([string] $path) {
+  [xml] $xml = Get-Content $path
+
+  $xws = New-Object System.Xml.XmlWriterSettings
+  $xws.Indent = $true
+  $xws.IndentChars = "  "
+
+  $xw = [System.Xml.XmlWriter]::Create($path, $xws)
+  $xml.Save($xw)
+  $xw.Dispose()
+}
