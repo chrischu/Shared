@@ -31,17 +31,18 @@ BuildStep Execute-NUnitTests -LogMessage 'Execute-NUnitTests (withDotCover: $wit
     [Parameter(ParameterSetName="WithDotCover")][string] $dotCoverResultsFile
   )
 
-  $nUnitRunnerPath = Get-NuGetSolutionPackagePath "NUnit.Runners"
-  $nUnitRunnerExecutable =  "$nUnitRunnerPath\tools\nunit-console-x86.exe"
+  $nUnitRunnerPath = Get-NuGetSolutionPackagePath "NUnit.ConsoleRunner"
+  $nUnitRunnerExecutable =  "$nUnitRunnerPath\tools\nunit3-console.exe"
   # It is important that we specify the parameters as separate strings here, otherwise they would be quoted as one ("/framework=net4.5 /labels...")
   # and this would lead to errors when the arguments are parsed by NUnit.
   $nUnitRunnerArguments = @(
     # The /framework value does not have to be exactly correct, it is mainly needed since the NUnit auto detection would use .NET 3.5.
     # Therefore it is only necessary to specify the right major version (in this case 4). However, if problems arise make it a parameter to allow it to 
     # be set from the build script.
-    "/framework=net-4.5", 
-    "/labels", 
-    "/result=$resultsFile")
+    "--framework=net-4.5", 
+    "--x86",
+    "--labels=On", 
+    "--result=$resultsFile")
   
   try {
     if ($withDotCover.IsPresent) {
