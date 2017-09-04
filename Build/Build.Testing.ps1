@@ -76,13 +76,13 @@ function _Execute-TestsWithDotCover {
       "/Output=$dotCoverResultsFile"
     ) -ErrorMessage "$testType tests with dotCover Coverage analysis have failed"
 
+    Report-DotCoverCoverageAnalysisResults $dotCoverResultsFile
+
     [double] $coveragePercentage = _Get-DotCoverCoveragePercentage $dotCoverResultsFile
 
     if ($coveragePercentage -lt 100.0) {
       throw "ERROR: Test coverage percentage is less than 100% ($coveragePercentage%)."
     }
-
-    Report-DotCoverCoverageAnalysisResults $dotCoverResultsFile
   } finally {
     Remove-Item $dotCoverConfig
   }
