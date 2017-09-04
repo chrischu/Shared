@@ -169,7 +169,8 @@ function _Create-DotCoverReport {
       "report", 
       "/Source=$dotCoverResultsFile", 
       "/Output=$outputFile", 
-      "/ReportType=$reportFormat"
+      "/ReportType=$reportFormat",
+      "/HideAutoProperties"
     ) -ErrorMessage "Creating a $reportFormat report for '$dotCoverResultsFile' failed"
 }
 
