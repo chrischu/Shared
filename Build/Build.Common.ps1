@@ -62,8 +62,7 @@ class Project {
   [string] $TargetPath
   [string] $TargetDir
 
-  [string] $NuSpecName
-  [string] $NuSpecPath
+  [bool] $IsPackable
 
   Project([string] $name, [string] $path, [string] $configuration) {
     $this.ProjectName = $name
@@ -71,22 +70,18 @@ class Project {
     $this.ProjectDir = [System.IO.Path]::GetDirectoryName($path)
 
     $this.Configuration = $configuration
-
-    # IDEA: This code is duplicated in ContainsXmlNode below, maybe find a way to avoid this duplication.
-    [xml] $xml = Get-Content $this.ProjectPath
-    [System.Xml.XmlNamespaceManager] $nsmgr = $xml.NameTable
-    $nsmgr.AddNamespace("msb", "http://schemas.microsoft.com/developer/msbuild/2003")
-
-    $configurationPropertyGroups = $xml.SelectNodes("//msb:PropertyGroup[contains(@Condition, `"'`$(Configuration)|`$(Platform)' == '$configuration|`")]", $nsmgr)
-    if($configurationPropertyGroups.Count -ne 1) {
-      throw "Project '$name': Found $($configurationPropertyGroups.Count) property groups for configuration '$configuration' but there should be only one."
-    }
-
-    $this.OutDir = $configurationPropertyGroups.OutputPath
     
-    $assemblyName = $xml.SelectSingleNode("//msb:AssemblyName", $nsmgr).'#text'
-
-    $outputType = $xml.SelectSingleNode("//msb:OutputType", $nsmgr).'#text'
+    $globalProperties = New-Object 'System.Collections.Generic.Dictionary[string,string]'
+    $globalProperties['Configuration'] = $this.Configuration
+    $toolsVersion = "15.0";
+    
+    Load-MicrosoftBuildAssembly
+    $project = New-Object 'Microsoft.Build.Evaluation.Project' -ArgumentList @($this.ProjectPath, $globalProperties, $toolsVersion)
+    
+    $this.OutDir = $project.GetPropertyValue("OutDir")
+       
+    $assemblyName = $project.GetPropertyValue("AssemblyName")
+    $outputType = $project.GetPropertyValue("OutputType")
     $extension = "dll"
     if ($outputType -eq "Exe") {
       $extension = "exe"
@@ -96,21 +91,14 @@ class Project {
     $this.TargetDir = Join-Path $this.ProjectDir $this.OutDir
     $this.TargetPath = Join-Path $this.TargetDir $this.TargetName
 
-    # Unfortunately XPath 1.0 does not support ends-with so therefore we have to build our own version of it.
-    $endsWith = "{1} = substring({0}, string-length({0}) - string-length({1}) + 1)"
-
-    $nuSpecNodes = $xml.SelectNodes("//msb:None[$($endsWith -f "@Include", "'.nuspec'")]", $nsmgr)
-
-    if($nuSpecNodes.Count -eq 0){
-      $this.NuSpecName = $null
-      $this.NuSpecPath = $null
-    } elseif ($nuSpecNodes.Count -eq 1) {
-      $this.NuSpecPath = Join-Path $this.ProjectDir $nuSpecNodes.Include
-      $this.NuSpecName = [System.IO.Path]::GetFileName($this.NuSpecPath)
-    } else {
-      throw "ERROR: Project '$($this.ProjectName)' should not contain more than one .nuspec file."
-    }
+    $this.IsPackable = $project.GetPropertyValue("IsPackable")
   }
+}
+
+function Load-MicrosoftBuildAssembly {
+  $msBuildExecutableDirectory = Split-Path -Path $MSBuildExecutable 
+  $microsoftBuildAssemblyFile = Join-Path $msBuildExecutableDirectory "Microsoft.Build.dll"
+  Add-Type -Path $microsoftBuildAssemblyFile
 }
 
 function Get-ProjectsFromSolution {
@@ -208,4 +196,11 @@ function Format-Xml([string] $path) {
   $xw = [System.Xml.XmlWriter]::Create($path, $xws)
   $xml.Save($xw)
   $xw.Dispose()
+}
+
+function Format-MsBuildProperties {
+  [CmdletBinding()]
+  Param([Parameter(Mandatory)] [Hashtable] $properties)
+
+  return ($properties.GetEnumerator() | %{ "$($_.Name)=$($_.Value)" }) -join ";"
 }

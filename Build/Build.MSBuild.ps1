@@ -13,15 +13,34 @@ BuildStep Build-Solution {
       [Parameter(Mandatory)] [Project[]] $projects,
       [Parameter(Mandatory)] [string] $configuration, 
       [Parameter(Mandatory)] [boolean] $treatWarningsAsErrors, 
-      [Parameter(Mandatory)] [boolean] $runFxCopCodeAnalysis,
-      [Parameter(Mandatory)] [string] $fxCopResultsDirectory)
+      [string] $versionPrefix = $null,
+      [string] $versionSuffix = $null,
+      [boolean] $runFxCopCodeAnalysis = $false,
+      [string] $fxCopResultsDirectory = $null)
 
-  $treatCodeAnalysisWarningsAsErrorsParam = ""
-  if ($runFxCopCodeAnalysis) {
-    $treatCodeAnalysisWarningsAsErrorsParam = ";CodeAnalysisTreatWarningsAsErrors=True"
+  $msBuildProperties = @{
+    "Configuration" = $configuration;
+    "TreatWarningsAsErrors" = $treatWarningsAsErrors;
+    "RunCodeAnalysis" = $runFxCopCodeAnalysis;
+    "SourceLinkServerType" = "GitHub";
+    "SourceLinkCreate" = "True";
   }
 
-  Exec { & $MSBuildExecutable $solutionFile /t:Build /m /nr:False "/p:Configuration=$configuration;TreatWarningsAsErrors=$treatWarningsAsErrors;RunCodeAnalysis=$runFxCopCodeAnalysis$treatCodeAnalysisWarningsAsErrorsParam" } -ErrorMessage "Could not build solution '$solutionFile'"
+  if ($runFxCopCodeAnalysis) {
+    $msBuildProperties.Add("CodeAnalysisTreatWarningsAsErrors", "True")
+  }
+
+  if($version) {
+    $msBuildProperties.Add("VersionPrefix", $version)
+
+    if($versionSuffix) {
+      $msBuildProperties.Add("VersionSuffix", $versionSuffix)
+    }
+  }
+
+  $formattedMsBuildProperties = Format-MsBuildProperties $msBuildProperties
+  
+  Exec { & $MSBuildExecutable $solutionFile /t:Build /m /nr:False "/p:$formattedMsBuildProperties" } -ErrorMessage "Could not build solution '$solutionFile'"
 
   if($runFxCopCodeAnalysis) {
     $fxCopResultsFiles = $projects | % { "$($_.TargetPath).CodeAnalysisLog.xml" }
