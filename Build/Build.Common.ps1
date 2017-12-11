@@ -79,7 +79,7 @@ class Project {
 
     $configurationPropertyGroups = $xml.SelectNodes("//msb:PropertyGroup[contains(@Condition, `"'`$(Configuration)|`$(Platform)' == '$configuration|`")]", $nsmgr)
     if($configurationPropertyGroups.Count -ne 1) {
-      throw "Found $($configurationPropertyGroups.Count) property groups for configuration '$configuration' but there should be only one."
+      throw "Project '$name': Found $($configurationPropertyGroups.Count) property groups for configuration '$configuration' but there should be only one."
     }
 
     $this.OutDir = $configurationPropertyGroups.OutputPath
