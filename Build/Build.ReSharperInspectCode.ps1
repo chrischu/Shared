@@ -2,13 +2,30 @@ BuildStep Execute-ReSharperCodeInspection {
   Param(
       [Parameter(Mandatory)] [string] $solutionFile,
       [Parameter(Mandatory)] [string] $configuration,
-      [Parameter(Mandatory)] [string] $resultsFile)
+      [Parameter(Mandatory)] [string] $resultsFile,
+      [Parameter()] [string] $branchName = "(local)")
 
   $reSharperCommandLineToolsPath = Get-NuGetSolutionPackagePath "JetBrains.ReSharper.CommandLineTools"
-  $reSharperInspectCodeExecutable = "$reSharperCommandLineToolsPath\tools\inspectcode.exe"
+  $reSharperInspectCodeExecutableDir = "$reSharperCommandLineToolsPath\tools"
+  $reSharperInspectCodeExecutable = "$reSharperInspectCodeExecutableDir\inspectcode.exe"
 
-  # TODO: Use /x=$(reSharperInspectCodeExtensions) again once https://youtrack.jetbrains.com/issue/RSRP-436208 is fixed.
-  # $reSharperInspectCodeExtensions = "ReSharper.ImplicitNullability;ReSharper.SerializationInspections;ReSharper.XmlDocInspections"
+  $extensions = @("ReSharper.ImplicitNullability", "ReSharper.SerializationInspections", "ReSharper.XmlDocInspections")
+  foreach($ext in $extensions) {
+    $extPath = Get-NuGetSolutionPackagePath $ext
+    $nupkg = Get-ChildItem "$extPath\*.nupkg"
+    Copy-Item $nupkg $reSharperInspectCodeExecutableDir
+  }
+
+  $escapedBranchName = $branchName -replace "[^\w\(\)\.-]","_"
+
+  Exec { 
+    & $reSharperInspectCodeExecutable `
+      --caches-home=_ReSharperInspectCodeCache_$escapedBranchName `
+      --toolset=$MSBuildToolset `
+      -o="$resultsFile" `
+      --properties="Configuration=$configuration" `
+       $solutionFile
+  } -ErrorMessage "ReSharper code inspection failed"
 
   Exec { 
     & $reSharperInspectCodeExecutable `
