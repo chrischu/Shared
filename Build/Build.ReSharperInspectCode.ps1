@@ -27,15 +27,6 @@ BuildStep Execute-ReSharperCodeInspection {
        $solutionFile
   } -ErrorMessage "ReSharper code inspection failed"
 
-  Exec { 
-    & $reSharperInspectCodeExecutable `
-      --caches-home=_ReSharperInspectCodeCache `
-      --toolset=$MSBuildToolset `
-      -o="$resultsFile" `
-      --properties="Configuration=$configuration" `
-       $solutionFile
-  } -ErrorMessage "ReSharper code inspection failed"
-
   Report-ReSharperInspectCodeResults $resultsFile
 
   [xml] $xml = Get-Content $resultsFile
